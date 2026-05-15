@@ -20,7 +20,7 @@ pipeline{
             steps{
                 script{
                     
-                bat 'docker run -d -p 5000:5000 --name flask-container flask-jenkins-angular-image:latest'
+                bat 'docker run -d -p 5000:5000 --name angular-container flask-jenkins-angular-image:latest'
                 }
             }
         }
