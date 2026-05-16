@@ -19,7 +19,7 @@ pipeline{
         stage("Deploy Docker Container"){
             steps{
                 script{
-                    
+                bat 'docker rm -f angular-container'    
                 bat 'docker run -d -p 5001:5000 --name angular-container flask-jenkins-angular-image:latest'
                 }
             }
